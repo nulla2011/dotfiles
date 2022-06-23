@@ -1,0 +1,1 @@
+/home/dell/.p10k.zsh
