@@ -1,1 +1,113 @@
-/c/Users/n/AppData/Roaming/Code/User/settings.json
+{
+  "files.associations": {
+    "*.wxml": "html",
+    "*.wxss": "css"
+  },
+  "editor.largeFileOptimizations": false,
+  "breadcrumbs.enabled": true,
+  "terminal.external.windowsExec": "cmd.exe /c set MSYSTEM=MINGW64 && set MSYS=winsymlinks:nativestrict&& set MSYS2_PATH_TYPE=inherit&& set CHERE_INVOKING=enabled_from_arguments&& E:/msys64/usr/bin/zsh.exe --login",
+  //"terminal.integrated.shell.windows": "cmd.exe",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "zsh": {
+      "path": "E:/msys64/msys2_shell.cmd",
+      "args": ["-defterm", "-mingw64", "-no-start", "-here", "-lic", "exec zsh"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "git.path": "E:/msys64/usr/bin/git-wrap.bat",
+  "python.formatting.provider": "yapf",
+  "python.defaultInterpreterPath": "C:\\Users\\n\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+  "python.languageServer": "Pylance",
+  "search.followSymlinks": false,
+  "editor.wordWrap": "on",
+  "update.mode": "manual",
+  "update.enableWindowsBackgroundUpdates": false,
+  "extensions.autoUpdate": false,
+  "oh-my-ins.setting.accounts": "17.tachibana,kyoka_moriya",
+  "oh-my-ins.setting.item_count_per_account": 20,
+  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "settingsSync.ignoredExtensions": ["randomfractalsinc.vscode-data-preview"],
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": false,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  // "vim.insertModeKeyBindings": [
+  //     {
+  //         "before": [
+  //             "j",
+  //             "j"
+  //         ],
+  //         "after": [
+  //             "<Esc>"
+  //         ]
+  //     }
+  // ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-k>": false,
+    "<C-c>": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": false,
+  "prettier.arrowParens": "always",
+  "prettier.bracketSameLine": false,
+  "prettier.bracketSpacing": true,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.insertPragma": false,
+  "prettier.jsxSingleQuote": false,
+  "prettier.printWidth": 90,
+  "prettier.proseWrap": "preserve",
+  "prettier.quoteProps": "as-needed",
+  "prettier.requirePragma": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Moonlight II Italic",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
