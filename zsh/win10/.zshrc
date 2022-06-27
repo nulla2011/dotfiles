@@ -15,13 +15,15 @@ source "${ZINIT_HOME}/zinit.zsh"
 #     FAST_HIGHLIGHT_STYLES[${FAST_THEME_NAME}function]='fg=blue'
 # }
 zinit ice lucid wait='0'
-zinit snippet OMZ::plugins/git/git.plugin.zsh
-zinit snippet OMZ::plugins/command-not-found/command-not-found.plugin.zsh
-zinit snippet OMZ::plugins/sublime/sublime.plugin.zsh
-zinit snippet OMZ::lib/directories.zsh
-zinit snippet OMZ::lib/history.zsh
-zinit snippet OMZ::lib/functions.zsh
-zinit snippet OMZ::lib/clipboard.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::command-not-found
+zinit snippet OMZP::sublime
+zinit snippet OMZP::globalias
+zinit snippet OMZL::directories.zsh
+zinit snippet OMZL::history.zsh
+zinit snippet OMZL::functions.zsh
+zinit snippet OMZL::clipboard.zsh
+zinit snippet OMZL::key-bindings.zsh
 zinit ice lucid wait='0' atinit='zpcompinit'; zinit light zdharma/fast-syntax-highlighting
 zinit ice wait lucid atload='_zsh_autosuggest_start'; zinit light zsh-users/zsh-autosuggestions
 zinit light agkozak/zsh-z
