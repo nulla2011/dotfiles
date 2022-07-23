@@ -24,13 +24,14 @@ zinit snippet OMZL::history.zsh
 zinit snippet OMZL::functions.zsh
 zinit snippet OMZL::clipboard.zsh
 zinit snippet OMZL::key-bindings.zsh
+zinit snippet OMZL::theme-and-appearance.zsh
 zinit ice lucid wait='0' atinit='zpcompinit'; zinit light zdharma/fast-syntax-highlighting
 zinit ice wait lucid atload='_zsh_autosuggest_start'; zinit light zsh-users/zsh-autosuggestions
 zinit light agkozak/zsh-z
 zinit ice lucid wait='0'; zinit light zsh-users/zsh-completions
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 zinit ice wait lucid pick"autopair.zsh"
-zinit load hlissner/zsh-autopair
+# zinit load hlissner/zsh-autopair
 
 alias kz="tskill zsh"
 

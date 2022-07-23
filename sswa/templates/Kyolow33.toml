@@ -1,0 +1,35 @@
+# 模板的默认投稿帐号
+default-user = "sagume"
+ 
+# 标题
+title = "【{{touhou}}】{{songname}} MIDI + 音源详解"
+# 描述
+description = '''{%-if midi -%}
+midi 下载：
+{{midi}}
+（使用需要注明原作者 Kyolow33）{%- endif %}'''
+# 转载来源，该字段存在且不为空时以转载形式投稿，否则投成自制
+forward-source = "{{link}}"
+# 投稿分区
+tid = 130
+# 封面图片路径
+# 当留空或值为 auto 时，自动从第一个视频（不包含前缀视频）中随机提取
+cover = "./sddefault.jpg"
+# 动态文本
+dynamic-text = ""
+# 标签
+tags = ["东方PROJECT", "MIDI", "{{songname-ja}}", "耳コピ"]
+# 定时投稿
+display-time = ""
+# 前缀视频，在投稿时自动添加在选中视频**前面**
+video-prefix = []
+# 后缀视频，在投稿时自动添加在选中视频**后面**
+video-suffix = []
+ 
+# 变量对应的解释文本，在需要用户手动输入时作为提示文本展示
+[variables]
+touhou = "作品名"
+songname = "曲名"
+link = "链接"
+songname-ja = "曲名原文"
+midi = "midi地址"

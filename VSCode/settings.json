@@ -13,7 +13,10 @@
       "icon": "terminal-powershell"
     },
     "Command Prompt": {
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
       "args": [],
       "icon": "terminal-cmd"
     },
@@ -22,7 +25,14 @@
     },
     "zsh": {
       "path": "E:/msys64/msys2_shell.cmd",
-      "args": ["-defterm", "-mingw64", "-no-start", "-here", "-lic", "exec zsh"]
+      "args": [
+        "-defterm",
+        "-mingw64",
+        "-no-start",
+        "-here",
+        "-lic",
+        "exec zsh"
+      ]
     }
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
@@ -39,7 +49,9 @@
   "oh-my-ins.setting.item_count_per_account": 20,
   "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
   "editor.tabSize": 2,
-  "settingsSync.ignoredExtensions": ["randomfractalsinc.vscode-data-preview"],
+  "settingsSync.ignoredExtensions": [
+    "randomfractalsinc.vscode-data-preview"
+  ],
   "workbench.iconTheme": "eq-material-theme-icons-light",
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -59,16 +71,30 @@
   // ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
     },
     {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": ["K"],
-      "commands": ["lineBreakInsert"],
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
       "silent": true
     }
   ],
@@ -82,7 +108,6 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": false,
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
@@ -101,7 +126,7 @@
   "prettier.useTabs": false,
   "prettier.vueIndentScriptAndStyle": true,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -109,5 +134,7 @@
   "workbench.colorTheme": "Moonlight II Italic",
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.formatOnSave": true,
+  "tabnine.experimentalAutoImports": true
 }
