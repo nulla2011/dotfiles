@@ -1,4 +1,5 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
@@ -10,11 +11,22 @@
             "keys": "ctrl+w"
         },
         {
+            "command": "scrollDownPage",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
             "command": 
             {
                 "action": "newTab"
             },
             "keys": "ctrl+t"
+        },
+        {
+            "command": 
+            {
+                "action": "nextTab"
+            },
+            "keys": "ctrl+tab"
         },
         {
             "command": "unbound",
@@ -89,17 +101,6 @@
             "keys": "alt+9"
         },
         {
-            "command": "scrollDownPage",
-            "keys": "ctrl+shift+pgdn"
-        },
-        {
-            "command": 
-            {
-                "action": "nextTab"
-            },
-            "keys": "ctrl+tab"
-        },
-        {
             "command": 
             {
                 "action": "openSettings"
@@ -144,11 +145,9 @@
         "list": 
         [
             {
-                "acrylicOpacity": 0.5,
                 "background": "#012456",
                 "closeOnExit": "graceful",
                 "colorScheme": "Campbell",
-                "commandline": "powershell.exe",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "bar",
                 "font": 
@@ -160,13 +159,13 @@
                 "historySize": 9001,
                 "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
                 "name": "Windows PowerShell",
+                "opacity": 50,
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
                 "startingDirectory": "%USERPROFILE%",
                 "useAcrylic": false
             },
             {
-                "acrylicOpacity": 0.69999999999999996,
                 "closeOnExit": "graceful",
                 "colorScheme": "GitBash",
                 "commandline": "\"E:\\Git\\bin\\bash.exe\" --login -i -l",
@@ -181,35 +180,34 @@
                 "historySize": 9001,
                 "icon": "E:/Git/mingw64/share/git/git-for-windows.ico",
                 "name": "git-bash",
+                "opacity": 70,
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.80000000000000004,
                 "closeOnExit": "graceful",
                 "colorScheme": "ohmyzsh",
-                "commandline": "E:/msys64/msys2_shell.cmd -defterm -mingw64 -no-start -here -lic \"exec zsh\"",
+                "commandline": "C:/msys64/msys2_shell.cmd -defterm -mingw64 -no-start -here",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "bar",
                 "font": 
                 {
-                    "face": "JetBrainsMono NF",
-                    "size": 12
+                    "face": "CaskaydiaCove NF",
+                    "size": 13
                 },
                 "guid": "{23816f9a-7dbb-46cf-85ec-fd5395d67a52}",
                 "historySize": 9001,
-                "icon": "E:/msys64/msys2.ico",
+                "icon": "C:/msys64/msys2.ico",
                 "name": "Zsh",
+                "opacity": 80,
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
                 "useAcrylic": true
             },
             {
-                "acrylicOpacity": 0.69999998807907104,
                 "closeOnExit": "graceful",
                 "colorScheme": "Campbell",
-                "commandline": "cmd.exe",
                 "cursorColor": "#FFFFFF",
                 "cursorShape": "bar",
                 "font": 
@@ -221,6 +219,7 @@
                 "historySize": 9001,
                 "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
                 "name": "cmd",
+                "opacity": 70,
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
                 "useAcrylic": true
@@ -468,9 +467,9 @@
         {
             "background": "#20202A",
             "black": "#0C0C0C",
-            "blue": "#2070ff",
+            "blue": "#2070FF",
             "brightBlack": "#767676",
-            "brightBlue": "#467ffc",
+            "brightBlue": "#467FFC",
             "brightCyan": "#61D6D6",
             "brightGreen": "#16C60C",
             "brightPurple": "#B4009E",
@@ -478,15 +477,15 @@
             "brightWhite": "#F2F2F2",
             "brightYellow": "#F9F1A5",
             "cursorColor": "#FFFFFF",
-            "cyan": "#75ffff",
+            "cyan": "#75FFFF",
             "foreground": "#FADB14",
             "green": "#00EF00",
             "name": "ohmyzsh",
-            "purple": "#ff58ff",
-            "red": "#db0000",
+            "purple": "#FF58FF",
+            "red": "#DB0000",
             "selectionBackground": "#FFFFFF",
             "white": "#FFFFFF",
-            "yellow": "#cec000"
+            "yellow": "#CEC000"
         }
     ],
     "showTabsInTitlebar": true,

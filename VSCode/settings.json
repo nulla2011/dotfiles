@@ -24,7 +24,7 @@
       "source": "Git Bash"
     },
     "zsh": {
-      "path": "E:/msys64/msys2_shell.cmd",
+      "path": "C:/msys64/msys2_shell.cmd",
       "args": [
         "-defterm",
         "-mingw64",
@@ -36,7 +36,7 @@
     }
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "git.path": "E:/msys64/usr/bin/git-wrap.bat",
+  "git.path": "C:/msys64/usr/bin/git-wrap.bat",
   "python.formatting.provider": "yapf",
   "python.defaultInterpreterPath": "C:\\Users\\n\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
   "python.languageServer": "Pylance",
@@ -47,12 +47,12 @@
   "extensions.autoUpdate": false,
   "oh-my-ins.setting.accounts": "17.tachibana,kyoka_moriya",
   "oh-my-ins.setting.item_count_per_account": 20,
-  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "Operator Mono Lig, Cascadia Code PL SemiLight, JetBrains Mono, Consolas, 'Courier New', monospace",
   "editor.tabSize": 2,
   "settingsSync.ignoredExtensions": [
     "randomfractalsinc.vscode-data-preview"
   ],
-  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "workbench.iconTheme": "material-icon-theme",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": false,
@@ -105,17 +105,13 @@
     "<C-k>": false,
     "<C-c>": false
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "prettier.arrowParens": "always",
   "prettier.bracketSameLine": false,
   "prettier.bracketSpacing": true,
   "prettier.embeddedLanguageFormatting": "auto",
-  "prettier.htmlWhitespaceSensitivity": "css",
-  "prettier.insertPragma": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
   "prettier.jsxSingleQuote": false,
-  "prettier.printWidth": 90,
+  "prettier.printWidth": 100,
   "prettier.proseWrap": "preserve",
   "prettier.quoteProps": "as-needed",
   "prettier.requirePragma": false,
@@ -125,16 +121,36 @@
   "prettier.trailingComma": "es5",
   "prettier.useTabs": false,
   "prettier.vueIndentScriptAndStyle": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Moonlight II Italic",
   "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "workbench.colorTheme": "Moonlight II Italic",
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.guides.bracketPairs": true,
+  "editor.tabCompletion": "on",
   "editor.formatOnSave": true,
-  "tabnine.experimentalAutoImports": true
+  "workbench.editorAssociations": {
+    "*.xlsx": "gc-excelviewer-excel-editor"
+  },
+  "tabnine.disableFileRegex": [
+    "[.]^(js|ts|json|py)$"
+  ],
 }
