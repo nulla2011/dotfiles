@@ -35,7 +35,11 @@ zinit ice wait lucid pick"autopair.zsh"
 # zinit load hlissner/zsh-autopair
 
 alias kz="tskill zsh"
+alias cdvideo="cd /c/users/n/videos/"
+alias cddesktop="cd /c/users/n/desktop/"
+alias slp="mpv http://127.0.0.1:5411"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ### End of Zinit's installer chunk
+. "/home/n/.acme.sh/acme.sh.env"
